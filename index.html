@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cinema</title>
+
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="fronpage">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cinemaModal">
+        Выбор фильма
+    </button>
+</div>
+
+<div class="modal fade" id="cinemaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__city">
+                    <div class="dropdown">
+                        <button class="btn btn__city dropdown-toggle" id="dropdownCity" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Санкт-Петербург
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownCity">
+                            <li><a class="dropdown-item" href="#">Москва</a></li>
+                            <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-header__address">
+                    Индустриальный просп., д. 24, литера А, ТРЦ «ИЮНЬ»
+                </div>
+                <div class="modal-header__enter">
+                    <a href="" class="btn btn__enter">ВХОД</a>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-filter row">
+                <div class="col modal-filter__col-sel2">
+                    <input type="text" class="modal-filter__inp modal-filter__inp--date" id="filterDate"
+                           value="Сегодня 28 сентября">
+                </div>
+                <div class="col modal-filter__col-sel1">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" id="filter1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Весь день
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Весь день</a></li>
+                            <li><a class="dropdown-item" href="#">Весь день3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col modal-filter__col-sel2">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" id="filter2" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Жанр
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Жанр</a></li>
+                            <li><a class="dropdown-item" href="#">Жанр3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col modal-filter__col-sel1">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" id="filter3" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Формат
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Формат</a></li>
+                            <li><a class="dropdown-item" href="#">Формат3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col modal-filter__col-sel1">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" id="filter4" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Возраст
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">12</a></li>
+                            <li><a class="dropdown-item" href="#">18</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col modal-filter__col-sel1">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" id="filter5" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Цена
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">100</a></li>
+                            <li><a class="dropdown-item" href="#">200</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__scrollbar" data-simplebar>
+                    <ul class="modal-body__list-films nav flex-column">
+                        <li class="modal-body__item-film">
+                            <div class="modal-body__item-film__col-img">
+
+                            </div>
+                            <div class="modal-body__item-film__col-desc">
+                                <h3 class="modal-body__item-film__title">Тихое место 2</h3>
+                                <ul class="modal-body__item-film__genre nav">
+                                    <li>Триллер</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./js/lib.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
