@@ -16,6 +16,7 @@
   border: $popover-border-width solid $popover-border-color;
   @include border-radius($popover-border-radius);
   @include box-shadow($popover-box-shadow);
+  height: 32px;
 
   .popover-arrow {
     position: absolute;

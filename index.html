@@ -11,8 +11,23 @@
 <body>
 
 <div class="fronpage">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cinemaModal">
+    <button data-bs-toggle="modal" data-bs-target="#cinemaModal">
         Выбор фильма
+    </button>
+    <br>
+    <br>
+    <button data-bs-toggle="modal" data-bs-target="#cinemaModal2">
+        Выбор сеанса
+    </button>
+    <br>
+    <br>
+    <button data-bs-toggle="modal" data-bs-target="#cinemaModal3">
+        Выбор места
+    </button>
+    <br>
+    <br>
+    <button data-bs-toggle="modal" data-bs-target="#cinemaModal4">
+        Выбор очков
     </button>
 </div>
 
@@ -23,6 +38,210 @@
                 <div class="modal-header__city">
                     <div class="dropdown">
                         <button class="btn btn__city dropdown-toggle" id="dropdownCity" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Санкт-Петербург
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownCity">
+                            <li><a class="dropdown-item" href="#">Москва</a></li>
+                            <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-header__address">
+                    Индустриальный просп., д. 24, литера А, ТРЦ «ИЮНЬ»
+                </div>
+                <div class="modal-header__enter">
+                    <a href="" class="btn btn__enter">ВХОД</a>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-filter row">
+                <div class="col modal-filter__col-sel2">
+                    <input type="text" class="modal-filter__inp modal-filter__inp--date"
+                           value="Сегодня 28 сентября">
+                </div>
+                <div class="col modal-filter__col-sel1">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Весь день
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Весь день</a></li>
+                            <li><a class="dropdown-item" href="#">Весь день3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col modal-filter__col-sel2">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Жанр
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Жанр</a></li>
+                            <li><a class="dropdown-item" href="#">Жанр3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col modal-filter__col-sel1">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Формат
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Формат</a></li>
+                            <li><a class="dropdown-item" href="#">Формат3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col modal-filter__col-sel1">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Возраст
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">12</a></li>
+                            <li><a class="dropdown-item" href="#">18</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col modal-filter__col-sel1">
+                    <div class="dropdown">
+                        <button class="btn btn__select dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Цена
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">100</a></li>
+                            <li><a class="dropdown-item" href="#">200</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__scrollbar" data-simplebar>
+                    <ul class="modal-body__list-films nav flex-column">
+                        <li class="modal-body__item-film">
+                            <div class="modal-body__item-film__col-img">
+                                <span class="modal-body__item-film__label modal-body__item-film__label--new">НОВИНКА</span>
+                                <img src="./img/film1.jpg" alt="">
+                            </div>
+                            <div class="modal-body__item-film__col-desc">
+                                <h3 class="modal-body__item-film__title">Тихое место 2</h3>
+                                <ul class="modal-body__item-film__genre nav">
+                                    <li>Триллер</li>
+                                </ul>
+                                <div class="modal-body__item-film__text">
+                                    Семья Эбботт продолжает бороться за жизнь в полной тишине. Вслед за смертельной
+                                    угрозой, с которой они столкнулись дома, им предстоит познать ужасы внешнего мира.
+                                    Они вынуждены отправиться в неизвестность, но быстро обнаруживают, что существа,
+                                    охотящиеся на звук, — не единственные враги за пределами безопасной песчаной тропы…
+                                </div>
+                                <div class="modal-body__item-film__footer">
+                                    <div class="modal-body__item-film__level">16 +</div>
+                                    <ul class="modal-body__item-film__adv nav">
+                                        <li>2D</li>
+                                        <li>3D</li>
+                                        <li>IMAX</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="modal-body__item-film">
+                            <div class="modal-body__item-film__col-img">
+                                <img src="./img/film2.jpg" alt="">
+                            </div>
+                            <div class="modal-body__item-film__col-desc">
+                                <h3 class="modal-body__item-film__title">Гнев человеческий</h3>
+                                <ul class="modal-body__item-film__genre nav">
+                                    <li>Фэнтези</li>
+                                    <li>Экшн</li>
+                                </ul>
+                                <div class="modal-body__item-film__text">
+                                    Эйч – загадочный и холодный на вид джентльмен, но внутри него пылает жажда
+                                    правосудия. Преследуя свои мотивы, он намерен найти заказчика серии многомиллионных
+                                    ограблений, потрясших Лос-Анджелес. В этой запутанной игре у каждого своя роль, но
+                                    виновные обязательно познают гнев человеческий...
+                                </div>
+                                <div class="modal-body__item-film__footer">
+                                    <div class="modal-body__item-film__level">18 +</div>
+                                    <ul class="modal-body__item-film__adv nav">
+                                        <li>2D</li>
+                                        <li>3D</li>
+                                        <li>IMAX</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="modal-body__item-film">
+                            <div class="modal-body__item-film__col-img">
+                                <span class="modal-body__item-film__label modal-body__item-film__label--new">НОВИНКА</span>
+                                <img src="./img/film1.jpg" alt="">
+                            </div>
+                            <div class="modal-body__item-film__col-desc">
+                                <h3 class="modal-body__item-film__title">Тихое место 2</h3>
+                                <ul class="modal-body__item-film__genre nav">
+                                    <li>Триллер</li>
+                                </ul>
+                                <div class="modal-body__item-film__text">
+                                    Семья Эбботт продолжает бороться за жизнь в полной тишине. Вслед за смертельной
+                                    угрозой, с которой они столкнулись дома, им предстоит познать ужасы внешнего мира.
+                                    Они вынуждены отправиться в неизвестность, но быстро обнаруживают, что существа,
+                                    охотящиеся на звук, — не единственные враги за пределами безопасной песчаной тропы…
+                                </div>
+                                <div class="modal-body__item-film__footer">
+                                    <div class="modal-body__item-film__level">16 +</div>
+                                    <ul class="modal-body__item-film__adv nav">
+                                        <li>2D</li>
+                                        <li>3D</li>
+                                        <li>IMAX</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="modal-body__item-film">
+                            <div class="modal-body__item-film__col-img">
+                                <img src="./img/film2.jpg" alt="">
+                            </div>
+                            <div class="modal-body__item-film__col-desc">
+                                <h3 class="modal-body__item-film__title">Гнев человеческий</h3>
+                                <ul class="modal-body__item-film__genre nav">
+                                    <li>Фэнтези</li>
+                                    <li>Экшн</li>
+                                </ul>
+                                <div class="modal-body__item-film__text">
+                                    Эйч – загадочный и холодный на вид джентльмен, но внутри него пылает жажда
+                                    правосудия. Преследуя свои мотивы, он намерен найти заказчика серии многомиллионных
+                                    ограблений, потрясших Лос-Анджелес. В этой запутанной игре у каждого своя роль, но
+                                    виновные обязательно познают гнев человеческий...
+                                </div>
+                                <div class="modal-body__item-film__footer">
+                                    <div class="modal-body__item-film__level">18 +</div>
+                                    <ul class="modal-body__item-film__adv nav">
+                                        <li>2D</li>
+                                        <li>3D</li>
+                                        <li>IMAX</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cinemaModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__city">
+                    <div class="dropdown">
+                        <button class="btn btn__city dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                             Санкт-Петербург
                         </button>
@@ -57,18 +276,6 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col modal-filter__col-sel2">
-                    <div class="dropdown">
-                        <button class="btn btn__select dropdown-toggle" id="filter2" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                            Жанр
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Жанр</a></li>
-                            <li><a class="dropdown-item" href="#">Жанр3</a></li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="col modal-filter__col-sel1">
                     <div class="dropdown">
                         <button class="btn btn__select dropdown-toggle" id="filter3" data-bs-toggle="dropdown"
@@ -78,18 +285,6 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Формат</a></li>
                             <li><a class="dropdown-item" href="#">Формат3</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col modal-filter__col-sel1">
-                    <div class="dropdown">
-                        <button class="btn btn__select dropdown-toggle" id="filter4" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                            Возраст
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">12</a></li>
-                            <li><a class="dropdown-item" href="#">18</a></li>
                         </ul>
                     </div>
                 </div>
@@ -105,23 +300,681 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
             <div class="modal-body">
                 <div class="modal-body__scrollbar" data-simplebar>
-                    <ul class="modal-body__list-films nav flex-column">
-                        <li class="modal-body__item-film">
-                            <div class="modal-body__item-film__col-img">
+                    <div class="modal-body__info-film modal-body__item-film">
+                        <div class="modal-body__info-film__img">
+                            <img src="./img/film1.jpg" alt="">
+                        </div>
+                        <div class="modal-body__item-film__col-desc">
+                            <h3 class="modal-body__item-film__title">Тихое место 2</h3>
 
+                            <div class="modal-body__item-film__text">
+                                Семья Эбботт продолжает бороться за жизнь в полной тишине. Вслед за смертельной угрозой,
+                                с которой они столкнулись дома, им предстоит познать ужасы внешнего мира. Они вынуждены
+                                отправиться в неизвестность, но быстро обнаруживают, что существа, охотящиеся на звук,
+                                — не единственные враги за пределами безопасной песчаной тропы…
                             </div>
-                            <div class="modal-body__item-film__col-desc">
-                                <h3 class="modal-body__item-film__title">Тихое место 2</h3>
-                                <ul class="modal-body__item-film__genre nav">
-                                    <li>Триллер</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <div class="modal-body__film-session">
+                        <div class="modal-body__film-session__caption">2D</div>
+                        <ul class="modal-body__film-session__list nav">
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    10:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    12:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    16:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    18:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    20:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 1500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    22:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    16:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    18:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    20:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 1500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    22:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    16:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    18:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    20:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 1500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    22:40
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body__film-session">
+                        <div class="modal-body__film-session__caption">3D</div>
+                        <ul class="modal-body__film-session__list nav">
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    10:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    12:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    16:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    18:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    20:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 1500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    22:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    16:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    18:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    20:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 1500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    22:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    16:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    18:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    20:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 1500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    22:40
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body__film-session">
+                        <div class="modal-body__film-session__caption">IMAX</div>
+                        <ul class="modal-body__film-session__list nav">
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    10:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    12:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    16:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    18:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    20:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 1500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    22:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    16:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    18:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    20:40
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal-body__film-session__item"
+                                     data-bs-container="body"
+                                     data-bs-toggle="popover"
+                                     data-bs-placement="top"
+                                     data-bs-content="от 1500 ₽"
+                                     data-bs-trigger="hover focus"
+                                >
+                                    22:40
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cinemaModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__back">
+                    <a href="" class="modal-header__back__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12">
+                            <path d="M5.88,11.71a1,1,0,0,0,0-1.42h0L2.59,7H13a1,1,0,0,0,0-2H2.58l3.3-3.29A1,1,0,0,0,4.46.29h0L.88,3.88a3,3,0,0,0,0,4.24h0l3.58,3.59A1,1,0,0,0,5.88,11.71Z"/>
+                        </svg>
+                        Назад
+                    </a>
+                </div>
+                <div class="modal-header__info">
+                    <a class="modal-header__ico-info"
+                       data-bs-toggle="collapse"
+                       href="#collapseInfo"
+                    >
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 329.98">
+                            <path fill="currentColor"
+                                  d="M165,0C74,0,0,74,0,165S74,330,165,330s165-74,165-165S256,0,165,0Zm0,300C90.56,300,30,239.43,30,165S90.56,30,165,30,300,90.56,300,165,239.44,300,165,300Z"/>
+                            <path fill="currentColor"
+                                  d="M165,130a15,15,0,0,0-15,15V245a15,15,0,1,0,30,0V145A15,15,0,0,0,165,130Z"/>
+                            <path fill="currentColor" d="M165,70a15,15,0,1,0,10.61,4.39A15.13,15.13,0,0,0,165,70Z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="modal-header__timer">
+                    <div class="modal-header__countdown">09:59</div>
+                </div>
+                <div class="modal-header__enter">
+                    <a href="" class="btn btn__enter">ВХОД</a>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__scrollbar modal-body__scrollbar--footer" data-simplebar>
+                    <div class="modal-body__info-film modal-body__info-film--selected modal-body__item-film">
+                        <div class="modal-body__info-film__img">
+                            <img src="./img/film1.jpg" alt="">
+                        </div>
+                        <div class="modal-body__item-film__col-desc">
+                            <h3 class="modal-body__item-film__title">Тихое место 2</h3>
+                            <div class="modal-body__item-film__address">Индустриальный просп., д. 24, литера А, ТРЦ
+                                «ИЮНЬ»
+                            </div>
+                            <div class="modal-body__item-film__data-time">Зал 8, 28 сентября, 22:30</div>
+                        </div>
+                    </div>
+                    <div class="modal-body__info-film__hall-plan">
+                        <div class="modal-body__info-film__hall-plan__nav">
+                            <button class="zoom-plus"></button>
+                            <button class="zoom-minus"></button>
+                        </div>
+                        <img src="./img/SVG/hall-plan.svg" width="477" height="274" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-footer__info-price">
+                    <div class="modal-footer__info-price__col">
+                        <div class="modal-footer__info-price__row">
+                            <span class="item-place item-place--standard"></span>
+                            Стандарт (500 ₽)
+                        </div>
+                        <div class="modal-footer__info-price__row">
+                            <span class="item-place item-place--vip"></span>
+                            Диван (1000 ₽)
+                        </div>
+                    </div>
+                    <div class="modal-footer__info-price__col">
+                        <div class="modal-footer__info-price__row">
+                            <span class="item-place item-place--occupy"></span>
+                            Занятые места
+                        </div>
+                        <div class="modal-footer__info-price__row">
+                            <span class="item-place item-place--social"></span>
+                            Социальная дистанция
+                        </div>
+                    </div>
+                </div>
+                <button class="modal-footer__btn-bay" disabled>КУПИТЬ</button>
+            </div>
+            <div class="modal-toggle-info">
+                <div class="collapse" id="collapseInfo">
+                    <div class="modal-toggle-info__wrap">
+                        <div class="modal-toggle-info__header">
+                            <div class="modal-toggle-info__title">
+                                Ваш заказ
+                            </div>
+                            <button type="button" class="btn-close" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseInfo"></button>
+                        </div>
+                        <div class="modal-toggle-info__order">
+                            <div class="modal-toggle-info__caption">Билеты</div>
+                            <ul class="nav flex-column modal-toggle-info__order__list">
+                                <li class="modal-footer__info-price__row">
+                                    <span class="item-place item-place--standard"></span>
+                                    Стандарт Ряд 8, Место 9
+                                    <span class="item-place__cost">500 ₽</span>
+                                </li>
+                                <li class="modal-footer__info-price__row">
+                                    <span class="item-place item-place--standard"></span>
+                                    Стандарт Ряд 8, Место 10
+                                    <span class="item-place__cost">500 ₽</span>
+                                </li>
+                                <li class="modal-footer__info-price__row">
+                                    <span class="item-place item-place--vip"></span>
+                                    Стандарт Ряд 8, Место 9
+                                    <span class="item-place__cost">500 ₽</span>
+                                </li>
+                                <li class="modal-footer__info-price__row">
+                                    <span class="item-place item-place--vip"></span>
+                                    Стандарт Ряд 8, Место 9
+                                    <span class="item-place__cost">500 ₽</span>
+                                </li>
+
+                                <li class="modal-footer__info-price__itog">
+                                    <span>Всего (4)</span>
+                                    <span>2000 ₽</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cinemaModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__back">
+                    <a href="" class="modal-header__back__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12">
+                            <path d="M5.88,11.71a1,1,0,0,0,0-1.42h0L2.59,7H13a1,1,0,0,0,0-2H2.58l3.3-3.29A1,1,0,0,0,4.46.29h0L.88,3.88a3,3,0,0,0,0,4.24h0l3.58,3.59A1,1,0,0,0,5.88,11.71Z"/>
+                        </svg>
+                        Назад
+                    </a>
+                </div>
+                <div class="modal-header__info">
+                    <a class="modal-header__ico-info"
+                       data-bs-toggle="collapse"
+                       href="#collapseInfo"
+                    >
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 329.98">
+                            <path fill="currentColor"
+                                  d="M165,0C74,0,0,74,0,165S74,330,165,330s165-74,165-165S256,0,165,0Zm0,300C90.56,300,30,239.43,30,165S90.56,30,165,30,300,90.56,300,165,239.44,300,165,300Z"/>
+                            <path fill="currentColor"
+                                  d="M165,130a15,15,0,0,0-15,15V245a15,15,0,1,0,30,0V145A15,15,0,0,0,165,130Z"/>
+                            <path fill="currentColor" d="M165,70a15,15,0,1,0,10.61,4.39A15.13,15.13,0,0,0,165,70Z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="modal-header__timer">
+                    <div class="modal-header__countdown">09:59</div>
+                </div>
+                <div class="modal-header__enter">
+                    <a href="" class="btn btn__enter">ВХОД</a>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-alert">
+                <div class="modal-alert__info-text modal-alert__info-text--ico-glasses">
+                    <b>Внимание!</b> Для просмотра этого сеанса требуются специальные очки.<br>
+                    Стоимость очков в стоимость билета не входит.
+                </div>
+                <div class="modal-alert__rules">
+                    <a href="" class="rules-link">
+                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 329.98">
+                            <path fill="currentColor"
+                                  d="M165,0C74,0,0,74,0,165S74,330,165,330s165-74,165-165S256,0,165,0Zm0,300C90.56,300,30,239.43,30,165S90.56,30,165,30,300,90.56,300,165,239.44,300,165,300Z"/>
+                            <path fill="currentColor"
+                                  d="M165,130a15,15,0,0,0-15,15V245a15,15,0,1,0,30,0V145A15,15,0,0,0,165,130Z"/>
+                            <path fill="currentColor" d="M165,70a15,15,0,1,0,10.61,4.39A15.13,15.13,0,0,0,165,70Z"/>
+                        </svg>
+                        <span>Правила получения очков</span>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__scrollbar modal-body__scrollbar--footer" data-simplebar>
+                    <div class="modal-body__list-product">
+                        <div class="modal-body__col-product">
+                            <div class="modal-body__item-product"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-footer__info-price">
+                    <div class="modal-footer__info-price__col">
+                        <div class="modal-footer__info-price__row">
+                            <span class="item-place item-place--standard"></span>
+                            Стандарт (500 ₽)
+                        </div>
+                        <div class="modal-footer__info-price__row">
+                            <span class="item-place item-place--vip"></span>
+                            Диван (1000 ₽)
+                        </div>
+                    </div>
+                    <div class="modal-footer__info-price__col">
+                        <div class="modal-footer__info-price__row">
+                            <span class="item-place item-place--occupy"></span>
+                            Занятые места
+                        </div>
+                        <div class="modal-footer__info-price__row">
+                            <span class="item-place item-place--social"></span>
+                            Социальная дистанция
+                        </div>
+                    </div>
+                </div>
+                <button class="modal-footer__btn-bay">ПРОДОЛЖИТЬ</button>
+            </div>
+            <div class="modal-toggle-info">
+
             </div>
         </div>
     </div>
