@@ -1,7 +1,7 @@
-//let exampleEl = document.querySelector('.modal-body__film-session__item')
-//new bootstrap.Popover(exampleEl);
+if (window.innerWidth > 768) {
+    let popoverTriggerList = [].slice.call(document.querySelectorAll('.modal-body__film-session__item'))
+    let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+}
 
-var popoverTriggerList = [].slice.call(document.querySelectorAll('.modal-body__film-session__item'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl)
-})
