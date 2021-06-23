@@ -619,6 +619,54 @@
     }
   }
 }
+@media only screen and (max-width: 574px) {
+  .modal-body__itog-order-wrap {
+    padding-top: 0;
+    border-bottom: 1px solid #e6e8ec;
+    margin-bottom: 20px;
+    .navbar {
+      padding: 0;
+      .navbar-toggler {
+        padding: 0 0 9px;
+        border: none;
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:not(.collapsed) {
+          &::after {
+            border-bottom: 4px solid #000;
+          }
+        }
+        &::after {
+          content: "";
+          display: inline-block;
+          margin-left: 10px;
+          width: 0;
+          height: 0;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          vert-align: top;
+        }
+        &.collapsed {
+          &::after {
+            border-top: 4px solid #000;
+          }
+        }
+      }
+    }
+  }
+  .modal-collapse-wp {
+    padding-bottom: 10px;
+    .modal-toggle-info__caption {
+      padding-top: 10px !important;
+    }
+  }
+}
 @media only screen and (max-width: 440px) {
   .modal-body__film-session__list li {
     flex-basis: 33.33%;
